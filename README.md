@@ -51,6 +51,10 @@ Install project dependencies with:
 
 `npm install`
 
+If you are facing any problems with the installation, try the following command:
+
+`bundle exec rails assets:precompile`
+
 Create Database (Mandatory):
 
 `rails db:create`
@@ -63,7 +67,7 @@ If you have made a migration, execute the following command:
 
 To run the project, execute the following command:
 
-`rails s -p 3001`
+`rails s` or `./bin/dev`
 
 ## 👥 Authors <a name="authors"></a>
 
