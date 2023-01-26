@@ -33,15 +33,31 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need to:
+In order to run this project you need to install Ruby on Rails:
 
-- Install Ruby on Rails
+`gem install rails`
 
 ### Setup
 
 Clone this repository to your desired folder:
 
 `git clone git@github.com:shyusu4/Hello-Rails-React.git`
+
+### Install
+
+Install project dependencies with:
+
+`bundle install`
+
+`npm install`
+
+Create Database (Mandatory):
+
+`rails db:create`
+
+If you have made a migration, execute the following command:
+
+`rails db:migrate db:seed`
 
 ### Usage
 
