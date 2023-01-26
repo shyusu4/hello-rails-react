@@ -1,0 +1,28 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  database: hello_react_rails_development
+  pool: 5
+  host: localhost
+  username: postgres
+
+development:
+  <<: *default
+  database: hello_react_rails_development
+
+staging:
+  url: <%= ENV['DATABASE_URL'] %>
+
+test:
+  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  database: hello_react_rails_test
+  pool: 5
+  username: postgres
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
+  database: hello_react_rails_production
+  username: postgres
